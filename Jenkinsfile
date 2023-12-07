@@ -9,7 +9,7 @@ node {
 
     stage('Build image') {
   
-       app = docker.build("onyima101/private")
+       app = docker.build("onyima101/jenkins-slave")
     }
 
     stage('Test image') {
