@@ -28,7 +28,7 @@ node {
     }
     
     stage('Trigger ManifestUpdate') {
-                echo "triggering project-3-CDjob"
-                build job: 'project-3-CD', parameters: [string(name: 'DOCKERTAG', value: env.BUILD_NUMBER)]
+                echo "triggering ndcc-project-3-CDjob"
+                build job: 'ndcc-project-3-CD', parameters: [string(name: 'DOCKERTAG', value: env.BUILD_NUMBER)]
         }
 }
